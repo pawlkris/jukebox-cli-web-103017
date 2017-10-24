@@ -33,7 +33,7 @@ def play(songs)
   if songs.include?(song)
     puts("Playing #{song}")
   end
-  if (1..9).include?(song)
+  if song < 10
     puts("Playing #{songs[song-1]}")
   else
     puts("Invalid input, please try again")
