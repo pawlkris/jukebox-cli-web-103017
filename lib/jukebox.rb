@@ -32,9 +32,24 @@ def play(songs)
   song = gets.chomp
   if songs.include?(song)
     puts("Playing #{song}")
-  end
-  if song < 10
-    puts("Playing #{songs[song-1]}")
+  elsif song == 1
+    puts("Playing Phoenix - 1901")
+  elsif song == 2
+    puts("Tokyo Police Club - Wait Up")
+  elsif song == 3
+    puts("Sufjan Stevens - Too Much")
+  elsif song == 4
+    puts("The Naked and the Famous - Young Blood")
+  elsif song == 5
+    puts("(Far From) Home - Tiga")
+  elsif song == 6
+    puts("The Cults - Abducted")
+  elsif song == 7
+    puts("Phoenix - Consolation Prizes")
+  elsif song == 8
+    puts("Harry Chapin - Cats in the Cradle")
+  elsif song == 9
+    puts("Amos Lee - Keep It Loose, Keep It Tight")
   else
     puts("Invalid input, please try again")
   end
