@@ -33,7 +33,7 @@ def play(songs)
   if songs.include?(song)
     puts("Playing #{song}")
   elsif
-    (1..9).include?(song.to_str)
+    ("1".."9").include?(song.to_str)
     puts("Playing #{songs[song+1]}")
   else
     puts("Invalid input, please try again")
