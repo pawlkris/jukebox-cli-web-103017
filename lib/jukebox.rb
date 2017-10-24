@@ -32,8 +32,8 @@ def play(songs)
   song = gets.chomp
   if songs.include?(song)
     puts("Playing #{song}")
-  elsif
-    (1..9).include?(song)
+  end
+  if (1..9).include?(song)
     puts("Playing #{songs[song-1]}")
   else
     puts("Invalid input, please try again")
