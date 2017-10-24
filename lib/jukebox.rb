@@ -34,7 +34,7 @@ def play(songs)
     puts("Playing #{song}")
   elsif
     (1..9).include?(song)
-    puts("Playing #{songs[song+1]}")
+    puts("Playing #{songs[song-1]}")
   else
     puts("Invalid input, please try again")
   end
